@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <img src="assets/duocuc.png" alt="duoc" width="80" height="90">
+
+    <ion-button [routerLink]="['/inicio']" slot="end" color="danger">
+      <ion-icon name="power"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="centrar">
+  <h1>Cambio de Contraseña</h1>
+  </div>
+  
+  <ion-item>
+    <ion-label>Contraseña antigua:</ion-label>
+    <input type="password">
+  </ion-item>
+  <ion-item>
+    <ion-label>Contraseña Nueva:</ion-label>
+    <input type="password">
+  </ion-item>
+  <ion-item>
+    <ion-label>Confirme Contraseña:</ion-label>
+    <input type="password">
+  </ion-item>
+
+  <div class="centrarMenu">
+    <ion-button color="warning">
+      Cambiar
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <img src="assets/logo-duoc.png" alt="duoc2" width="100" height="50">
+  </ion-toolbar>
+</ion-footer>
