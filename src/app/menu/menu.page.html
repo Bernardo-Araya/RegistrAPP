@@ -1,7 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <img src="assets/duocuc.png" alt="duoc" width="80" height="90">
-
     <ion-button [routerLink]="['/inicio']" slot="end" color="danger">
       <ion-icon name="power"></ion-icon>
     </ion-button>
@@ -10,29 +9,28 @@
 
 <ion-content [fullscreen]="true">
   <div class="centrarMenu">
-    <ion-button [routerLink]="['/menu']" color="warning">
+    <ion-button [routerLink]="['/mis-asignaturas']" color="warning">
       Mis Asignaturas
     </ion-button>
-  </div> 
+  </div>
     
   <div class="centrarMenu">
-    <ion-button [routerLink]="['/menu']" color="warning">
+    <ion-button [routerLink]="['/mis-asistencias']" color="warning">
       Mis Asistencias
     </ion-button>
-  </div> 
+  </div>
     
   <div class="centrarMenu">
     <ion-button (click)="registrarAsis()" color="warning">
       Registrar Asistencias
     </ion-button>
-  </div>  
+  </div>
     
   <div class="centrarMenu">
     <ion-button [routerLink]="['/cambio']" color="warning">
       Cambiar Clave
     </ion-button>
   </div>
-
 </ion-content>
 
 <ion-footer>

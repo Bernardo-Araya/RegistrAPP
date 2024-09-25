@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'cambio',
     loadChildren: () => import('./cambio/cambio.module').then( m => m.CambioPageModule)
   },
+  {
+    path: 'mis-asignaturas',
+    loadChildren: () => import('./mis-asignaturas/mis-asignaturas.module').then( m => m.MisAsignaturasPageModule)
+  },
+  {
+    path: 'mis-asistencias',
+    loadChildren: () => import('./mis-asistencias/mis-asistencias.module').then( m => m.MisAsistenciasPageModule)
+  },
 ];
 
 @NgModule({
