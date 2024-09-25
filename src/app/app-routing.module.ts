@@ -35,10 +35,13 @@ const routes: Routes = [
     path: 'mis-asistencias',
     loadChildren: () => import('./mis-asistencias/mis-asistencias.module').then( m => m.MisAsistenciasPageModule)
   },
+<<<<<<< HEAD
   {
     path: 'registrar-asistencia',
     loadChildren: () => import('./registrar-asistencia/registrar-asistencia.module').then( m => m.RegistrarAsistenciaPageModule)
   },
+=======
+>>>>>>> c5f5246660f3070a6223a61cd2391e6a12daca4b
 ];
 
 @NgModule({

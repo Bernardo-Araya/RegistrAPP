@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
+<<<<<<< HEAD
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
+=======
+>>>>>>> c5f5246660f3070a6223a61cd2391e6a12daca4b
 
 @Component({
   selector: 'app-inicio',
@@ -10,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class InicioPage implements OnInit {
 
+<<<<<<< HEAD
   constructor(private toastController: ToastController, 
               private alertController: AlertController,
               private router: Router) {}
@@ -18,19 +22,28 @@ export class InicioPage implements OnInit {
   clave: string = '';
 
 
+=======
+  constructor(private toastController: ToastController) {}
+  
+>>>>>>> c5f5246660f3070a6223a61cd2391e6a12daca4b
   ngOnInit() {
   }
 
   async bienvenida()
   {
       const mensaje = await this.toastController.create({
+<<<<<<< HEAD
         message : 'Bienvenido ' + this.usuario,
+=======
+        message : 'Bienvenido usuario',
+>>>>>>> c5f5246660f3070a6223a61cd2391e6a12daca4b
         duration: 3000,
         position: 'bottom'
       });
       await mensaje.present();
       return;
   }
+<<<<<<< HEAD
 
   async validar(){
 
@@ -64,6 +77,8 @@ export class InicioPage implements OnInit {
     }
 
   }
+=======
+>>>>>>> c5f5246660f3070a6223a61cd2391e6a12daca4b
   
 
 }
