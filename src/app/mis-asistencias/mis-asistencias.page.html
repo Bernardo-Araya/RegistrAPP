@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <img src="assets/duocuc.png" alt="duoc" width="80" height="90">
+
+    <ion-button [routerLink]="['/inicio']" slot="end" color="danger">
+      <ion-icon name="power"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="centrar">
+    <ion-label>Mis Asistencias</ion-label>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let asistencia of asistencias">
+      <ion-label>
+        <h2>{{ asistencia.asignatura }}</h2>
+        <p>Fecha: {{ asistencia.fecha }}</p>
+        <p>Estado: {{ asistencia.presente ? 'Presente' : 'Ausente' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
