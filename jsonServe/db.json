@@ -1,0 +1,32 @@
+{
+
+    "Alumno": [
+        {
+            "id": 1,
+            "usuario": "Usuario1",
+            "clave": "MiClav3",
+            "nombre": "Diana",
+            "apellido": "Celeste"
+        }
+    ],
+
+    "Docente": [
+        {
+            "id": 1,
+            "usuario": "Docente01",
+            "clave":"MiClav2",
+            "nombre": "Juanito",
+            "apellido": "Arcoiris",
+            "asignatura": "Habilidades Básicas de Comunicacion"
+
+        }
+    ],
+
+    "Asignatura":[
+        {
+            "codigo": "PLC1101-017D",
+            "asignatura":"Habilidades Básicas de Comunicacion"
+        }
+    ]
+
+}
