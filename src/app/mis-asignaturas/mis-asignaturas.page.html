@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <img src="assets/duocuc.png" alt="duoc" width="80" height="90">
+
+    <ion-button [routerLink]="['/inicio']" slot="end" color="danger">
+      <ion-icon name="power"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <div class="centrar">
+      <ion-label>Mis Asignaturas</ion-label>
+    </div>
+    <ion-item *ngFor="let asignatura of asignaturas">
+      <ion-label>
+        <h2>{{ asignatura.nombre }}</h2>
+        <p>Sección: {{ asignatura.seccion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
