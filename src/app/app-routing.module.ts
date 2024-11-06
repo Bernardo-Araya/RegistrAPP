@@ -20,12 +20,8 @@ const routes: Routes = [
     loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
   },
   {
-    path: 'recuperar',
-    loadChildren: () => import('./recuperar/recuperar.module').then( m => m.RecuperarPageModule)
-  },
-  {
-    path: 'cambio',
-    loadChildren: () => import('./cambio/cambio.module').then( m => m.CambioPageModule)
+    path: 'menu2',
+    loadChildren: () => import('./menu2/menu2.module').then( m => m.Menu2PageModule)  // Menú para docentes
   },
   {
     path: 'mis-asignaturas',
@@ -38,7 +34,27 @@ const routes: Routes = [
   {
     path: 'registrar-asistencia',
     loadChildren: () => import('./registrar-asistencia/registrar-asistencia.module').then( m => m.RegistrarAsistenciaPageModule)
+  },  {
+    path: 'menu2',
+    loadChildren: () => import('./menu2/menu2.module').then( m => m.Menu2PageModule)
   },
+  {
+    path: 'mi-asignatura2',
+    loadChildren: () => import('./mi-asignatura2/mi-asignatura2.module').then( m => m.MiAsignatura2PageModule)
+  },
+  {
+    path: 'mis-estudiantes',
+    loadChildren: () => import('./mis-estudiantes/mis-estudiantes.module').then( m => m.MisEstudiantesPageModule)
+  },
+  {
+    path: 'registrar-asistencia2',
+    loadChildren: () => import('./registrar-asistencia2/registrar-asistencia2.module').then( m => m.RegistrarAsistencia2PageModule)
+  },
+  {
+    path: 'cambio2',
+    loadChildren: () => import('./cambio2/cambio2.module').then( m => m.Cambio2PageModule)
+  },
+
 ];
 
 @NgModule({

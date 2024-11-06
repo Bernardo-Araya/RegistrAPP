@@ -8,30 +8,31 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Menú principal para el docente -->
   <div class="centrarMenu">
-    <ion-button [routerLink]="['/mis-asignaturas']" color="warning">
+    <ion-button [routerLink]="['/mi-asignatura2']" color="primary">
       Mis Asignaturas
     </ion-button>
   </div>
     
   <div class="centrarMenu">
-    <ion-button [routerLink]="['/mis-asistencias']" color="warning">
-      Mis Asistencias
+    <ion-button [routerLink]="['/mis-estudiantes']" color="primary">
+      Mis Estudiantes
     </ion-button>
   </div>
     
   <div class="centrarMenu">
-    <ion-button (click)="registrarAsis()" color="warning">
-      Registrar Asistencias
+    <ion-button [routerLink]="['/registrar-asistencia2']" color="primary">
+      Asistencias
     </ion-button>
   </div>
     
   <div class="centrarMenu">
-    <ion-button href="/Cambio" color="warning">
+    <ion-button [routerLink]="['/cambio2']" color="primary">
       Cambiar Clave
     </ion-button>
-    
   </div>
+     
 </ion-content>
 
 <ion-footer>

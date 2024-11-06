@@ -3,11 +3,11 @@ import { AlertController } from '@ionic/angular';
 import { UsuarioService } from '../usuario.service';  // Asegúrate de que el servicio esté importado
 
 @Component({
-  selector: 'app-cambio',
-  templateUrl: './cambio.page.html',
-  styleUrls: ['./cambio.page.scss']
+  selector: 'app-cambio2',
+  templateUrl: './cambio2.page.html',
+  styleUrls: ['./cambio2.page.scss']
 })
-export class CambioPage {
+export class Cambio2Page {
   // Propiedades vinculadas a los campos de entrada en el HTML
   oldPassword: string = '';
   newPassword: string = '';
@@ -33,8 +33,8 @@ export class CambioPage {
           this.usuario = data;
         },
         (error) => {
-          console.error('Error al cargar el alumno', error);
-          this.presentAlert('Error', 'No se pudo cargar los datos del alumno.');
+          console.error('Error al cargar el docente', error);
+          this.presentAlert('Error', 'No se pudo cargar los datos del docente.');
         }
       );
     } else {
